@@ -1,9 +1,9 @@
 pipeline {
     agent { label docker }
     stages {
-        stage(‘build’) {
+        stage('build') {
             steps {
-                sh ‘mvn clean install’
+                sh 'mvn clean install'
             }
         }
         stage('dockerize') {
